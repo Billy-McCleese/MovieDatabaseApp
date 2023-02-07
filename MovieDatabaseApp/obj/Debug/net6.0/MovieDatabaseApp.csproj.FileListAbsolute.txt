@@ -1,0 +1,15 @@
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\obj\Debug\net6.0\MovieDatabaseApp.csproj.AssemblyReference.cache
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\obj\Debug\net6.0\MovieDatabaseApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\obj\Debug\net6.0\MovieDatabaseApp.AssemblyInfoInputs.cache
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\obj\Debug\net6.0\MovieDatabaseApp.AssemblyInfo.cs
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\obj\Debug\net6.0\MovieDatabaseApp.csproj.CoreCompileInputs.cache
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\bin\Debug\net6.0\MovieDatabaseApp.exe
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\bin\Debug\net6.0\MovieDatabaseApp.deps.json
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\bin\Debug\net6.0\MovieDatabaseApp.runtimeconfig.json
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\bin\Debug\net6.0\MovieDatabaseApp.dll
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\bin\Debug\net6.0\MovieDatabaseApp.pdb
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\obj\Debug\net6.0\MovieDatabaseApp.dll
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\obj\Debug\net6.0\refint\MovieDatabaseApp.dll
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\obj\Debug\net6.0\MovieDatabaseApp.pdb
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\obj\Debug\net6.0\MovieDatabaseApp.genruntimeconfig.cache
+C:\Git\MovieDatabaseApp\MovieDatabaseApp\obj\Debug\net6.0\ref\MovieDatabaseApp.dll
