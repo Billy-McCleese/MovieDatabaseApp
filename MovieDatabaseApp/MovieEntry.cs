@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovieDatabaseApp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +9,9 @@ namespace MovieDatabaseApp
 {
     internal class MovieEntry
     {
-        public string Title { get; set; }
-        public string Category { get; set; }
+        public string Title;
+        public string Category;
 
-        public MovieEntry(string category, string title)
-        {
-            Category = category;
-            Title = title;
-        }
+
     }
 }

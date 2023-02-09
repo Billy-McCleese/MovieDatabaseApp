@@ -1,38 +1,54 @@
 ﻿using MovieDatabaseApp;
 using System;
+using System.Linq;
 
+string UserCategoryInput;
+String SearchAgain;
+bool UserCategoryInputExists;
+List<MovieEntry> Movie = new List<MovieEntry>()
+{
+    new MovieEntry() { Title = "bugs life", Category = "animation" },
+    new MovieEntry() { Title = "men in black", Category = "sci-fi" },
+    new MovieEntry() { Title = "good will hunting", Category = "drama" },
+    new MovieEntry() { Title = "hardball", Category = "drama" },
+    new MovieEntry() { Title = "john q", Category = "drama" },
+    new MovieEntry() { Title = "avatar", Category = "animation" },
+    new MovieEntry() { Title = "step brothers", Category = "comedy" },
+    new MovieEntry() { Title = "mean girls", Category = "comedy" },
+    new MovieEntry() { Title = "crazy stupid love", Category = "rom-com" },
+    new MovieEntry() { Title = "mission impossible", Category = "action" }
+};
 
-List<MovieEntry> Movie = new List<MovieEntry>();
-
-new MovieEntry() { Title = "Bugs Life", Category = "Animation" };
-new MovieEntry() { Title = "Men in Black", Category = "Sci-Fi" };
-new MovieEntry() { Title = "Good Will Hunting", Category = "Drama" };
-new MovieEntry() { Title = "Hardball", Category = "Drama" };
-new MovieEntry() { Title = "John Q", Category = "Drama" };
-new MovieEntry() { Title = "Avatar", Category = "Animation" };
-new MovieEntry() { Title = "Step Brothers", Category = "Comedy" };
-new MovieEntry() { Title = "Mean Girls", Category = "Comedy" };
-new MovieEntry() { Title = "Crazy Stupid Love", Category = "Rom-Com" };
-new MovieEntry() { Title = "Mission Impossible", Category = "Action" };
-
-
-
+Console.WriteLine("There are 10 Movies in this List");
 
 do
 {
-    Console.WriteLine("There are 10 Movies in this List. \n Please Pick a category: ");
+    Console.WriteLine("Please Pick a category: ");
+    UserCategoryInput = Console.ReadLine().ToLower();
 
-    string UserCategoryInput = Console.ReadLine();
+    List<MovieEntry> SearchResults = Movie.Where(item => item.Category.Contains(UserCategoryInput)).ToList();
+    int ResultCount = SearchResults.Count();
 
-/*    List<MovieEntry> OutputList = new List<MovieEntry>();
-    foreach (var Movies in Movie)
+    if (ResultCount > 0)
     {
-        OutputList.Add(new (Movies.Key, Movies.Value));
+        foreach (var item in SearchResults)
+        {
+            Console.WriteLine(item.Title);
+        }
     }
-*/
+    else
+    {
+        Console.WriteLine("That category doesn't exist.");
+    }
 
-    Console.WriteLine("Search again?");
-} while (Console.ReadLine() == "y");
 
 
-//need to determine how to go through the list and output the movies based on category still. 
+
+    Console.WriteLine();
+    Console.WriteLine("Search again? (y/n)");
+    SearchAgain = Console.ReadLine().ToLower();
+} while (SearchAgain == "y");
+
+
+
+
